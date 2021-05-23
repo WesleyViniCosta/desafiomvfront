@@ -1,0 +1,29 @@
+<form>
+    <h1>Cadastrando nova opção</h1>
+
+    <mat-form-field class="form">
+        Nome
+        <mat-label></mat-label>
+        <input matInput [(ngModel)]="lista.nome" type="text" name="nome">
+    </mat-form-field>
+    <br>
+    <br>
+    <mat-form-field class="form">
+        CPF
+        <mat-label></mat-label>
+        <input matInput [(ngModel)]="lista.cpf" type="text" name="cpf">
+    </mat-form-field>
+    <br>
+    <br>
+    <mat-form-field class="form">
+        Opção de Café
+        <mat-label></mat-label>
+        <input matInput [(ngModel)]="lista.comida" type="text" name="comida">
+    </mat-form-field>
+    <br>
+    <br><br>
+    <div class="buttons">
+        <button (click)="create()" class="mat-elevation-z8" mat-raised-button color="primary">Cadastrar</button>
+    </div>
+
+</form> 
